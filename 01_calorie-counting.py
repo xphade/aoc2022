@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#
+# Copyright (c) 2021, xphade <github.com/xphade>
+# SPDX-License-Identifier: MIT
 
 import time
 from typing import List

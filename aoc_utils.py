@@ -1,3 +1,6 @@
+# Copyright (c) 2021, xphade <github.com/xphade>
+# SPDX-License-Identifier: MIT
+
 from argparse import ArgumentParser
 from pathlib import Path
 
