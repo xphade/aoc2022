@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (c) 2021, xphade <github.com/xphade>
+# Copyright (c) 2022, xphade <github.com/xphade>
 # SPDX-License-Identifier: MIT
 #
 # Run all (currently implemented) days.

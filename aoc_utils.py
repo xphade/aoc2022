@@ -1,4 +1,4 @@
-# Copyright (c) 2021, xphade <github.com/xphade>
+# Copyright (c) 2022, xphade <github.com/xphade>
 # SPDX-License-Identifier: MIT
 
 from argparse import ArgumentParser

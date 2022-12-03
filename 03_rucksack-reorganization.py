@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright (c) 2021, xphade <github.com/xphade>
+# Copyright (c) 2022, xphade <github.com/xphade>
 # SPDX-License-Identifier: MIT
 
 from typing import List
