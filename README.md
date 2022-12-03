@@ -1,6 +1,6 @@
 # Advent of Code 2022
 
-My solutions for the [Advent of Code 2022](https://adventofcode.com/2021)
+My solutions for the [Advent of Code 2022](https://adventofcode.com/2022)
 puzzles, written in Python3.
 
 ## Setup & Usage
