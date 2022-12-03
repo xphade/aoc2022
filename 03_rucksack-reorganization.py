@@ -51,8 +51,8 @@ def main():
     sum_of_badge_priorities = calculate_sum_of_badge_priorities(item_lists)
     stop = time.monotonic()
 
-    print(sum_of_type_priorities)
-    print(sum_of_badge_priorities)
+    print(f"Sum of common item type priorities: {sum_of_type_priorities}")
+    print(f"Sum of badge priorities: {sum_of_badge_priorities}")
     print_elapsed_time(start, stop)
 
 
