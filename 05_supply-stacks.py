@@ -13,20 +13,24 @@ from aoc_utils import get_input_path, print_elapsed_time
 Stack = List[str]
 Instruction = NamedTuple("Instruction", count=int, source=int, destination=int)
 
-INSTRUCTION_REGEX = re.compile(r".*?([0-9]+).*?([0-9]+).*?([0-9]+)")
+STACKS_NUM_REGEX = re.compile(r"(\d+)(?=\D*$)")
+INSTRUCTION_REGEX = re.compile(r".*?(\d+).*?(\d+).*?(\d+)")
 
 
 def preprocess_input(contents: str) -> Tuple[List[Stack], List[Instruction]]:
     stacks_raw, instructions_raw = contents.split("\n\n")
     stacks_lines = stacks_raw.splitlines()
-    number_of_stacks = int(stacks_lines[-1][-2])
+
+    res = STACKS_NUM_REGEX.search(stacks_lines[-1])
+    assert res is not None
+    number_of_stacks = int(res.group(1))
 
     stacks: List[Stack] = [[] for _ in range(number_of_stacks)]
-    for row in stacks_lines[:-1]:
+    for row in stacks_lines[-2::-1]:
         for i in range(number_of_stacks):
-            ch = row[4 * i + 1]
+            ch = row[4 * i + 1]  # This extracts the crate character.
             if ch != " ":
-                stacks[i].insert(0, ch)
+                stacks[i].append(ch)
 
     instructions: List[Instruction] = []
     for line in instructions_raw.splitlines():
