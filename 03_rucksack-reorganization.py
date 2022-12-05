@@ -3,9 +3,9 @@
 # Copyright (c) 2022, xphade <github.com/xphade>
 # SPDX-License-Identifier: MIT
 
-from typing import List
-import time
 import string
+import time
+from typing import List
 
 from aoc_utils import get_input_path, print_elapsed_time
 
