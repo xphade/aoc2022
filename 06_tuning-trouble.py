@@ -11,8 +11,7 @@ from aoc_utils import get_input_path, print_elapsed_time
 def find_unique_sequence(datastream: str, distinct_characters: int) -> int:
     i, j = 0, distinct_characters
     while j < len(datastream):
-        char_count = {ch: datastream[i:j].count(ch) for ch in datastream[i:j]}
-        if all([count == 1 for count in char_count.values()]):
+        if len(set(datastream[i:j])) == distinct_characters:
             return j
         i += 1
         j += 1
