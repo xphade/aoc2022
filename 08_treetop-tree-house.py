@@ -3,9 +3,10 @@
 # Copyright (c) 2022, xphade <github.com/xphade>
 # SPDX-License-Identifier: MIT
 
-from aoc_utils import get_input_path, print_elapsed_time
-from typing import List, Set, Tuple
 import time
+from typing import List, Set, Tuple
+
+from aoc_utils import get_input_path, print_elapsed_time
 
 # We assume that x is in downwards direction, y to the right.
 Coordinate = Tuple[int, int]
