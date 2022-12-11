@@ -77,9 +77,9 @@ def draw_crt(cycles: List[int]) -> str:
             crt += "\n"
 
         if pixel_pos % 40 in {sprite_pos - 1, sprite_pos, sprite_pos + 1}:
-            crt += "#"
+            crt += "🎅"
         else:
-            crt += " "
+            crt += "🎄"
     return crt
 
 
